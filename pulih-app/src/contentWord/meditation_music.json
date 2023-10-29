@@ -1,0 +1,62 @@
+ [
+    {
+        "title": "Malam di Bandara",
+        "description": "45 menit",
+        "image": "https://img.freepik.com/premium-vector/airport-lounge-illustration_129696-691.jpg?size=626&ext=jpg&ga=GA1.1.1597884202.1697846672&semt=ais",
+        "id": "1"
+    },
+    {
+        "title": "Puncak Ranukombolo",
+        "description": "45 menit",
+        "image": "https://img.freepik.com/premium-vector/snow-mountains-landscape-with-bright-moon_251819-2517.jpg?size=626&ext=jpg&ga=GA1.1.1597884202.1697846672&semt=ais",
+        "id": "2"
+    },
+    {
+        "title": "Rumah Pohon",
+        "description": "45 menit",
+        "image": "https://img.freepik.com/free-vector/cartoon-illustration-tree-house-dark-night-evening_33099-484.jpg?size=626&ext=jpg&ga=GA1.1.1597884202.1697846672&semt=ais",
+        "id": "3"
+    },
+    {
+        "title": "Pantai",
+        "description": "45 menit",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-summer-night-illustration_23-2149422843.jpg?size=626&ext=jpg&ga=GA1.1.1597884202.1697846672&semt=ais",
+        "id": "4"
+    },
+    {
+        "title": "Rumah Nyaman",
+        "description": "25 menit",
+        "image": "https://img.freepik.com/free-vector/flat-winter-window-illustration_23-2149845696.jpg?size=626&ext=jpg&ga=GA1.1.1597884202.1697846672&semt=ais",
+        "id": "5"
+    },
+    {
+        "title": "Susana Desa",
+        "description": "30 menit",
+        "image": "https://img.freepik.com/free-vector/gradient-summer-night-illustration-with-beach-view_23-2149431145.jpg?size=626&ext=jpg&ga=GA1.1.1597884202.1697846672&semt=ais",
+        "id": "6"
+    },
+    {
+        "title": "Hujan",
+        "description": "30 menit",
+        "image": "https://img.freepik.com/premium-photo/cat-looks-out-window-evening-snow-rain-coming-outside-window-home_114160-2442.jpg?size=626&ext=jpg&ga=GA1.1.1597884202.1697846672&semt=ais",
+        "id": "7"
+    },
+    {
+        "title": "Air Terjun",
+        "description": "30 menit",
+        "image": "https://img.freepik.com/free-vector/illustration-waterfall-rocks-night_33099-2386.jpg?size=626&ext=jpg&ga=GA1.1.1597884202.1697846672&semt=ais",
+        "id": "8"
+    },
+    {
+        "title": "Susana Malam",
+        "description": "25 menit",
+        "image": "https://img.freepik.com/free-vector/river-with-rocky-shore-trees-night_107791-11568.jpg?size=626&ext=jpg&ga=GA1.1.1597884202.1697846672&semt=ais",
+        "id": "9"
+    },
+    {
+        "title": "Susana Kota",
+        "description": "30 menit",
+        "image": "https://img.freepik.com/free-vector/district-with-suburban-houses-city-skyline_107791-16868.jpg?size=626&ext=jpg&ga=GA1.1.1597884202.1697846672&semt=ais",
+        "id": "10"
+    }
+ ]
