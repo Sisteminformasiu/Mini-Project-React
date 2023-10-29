@@ -1,0 +1,1 @@
+# Pulih merupakan sebuah Platform yang dibuat dengan tujuan untuk Membantu seseorang dalam menghadapi dan memperbaiki keadaan mental healthnya baik itu akibat stress,gangguan emosional, kecemasan dan lain-lain.
