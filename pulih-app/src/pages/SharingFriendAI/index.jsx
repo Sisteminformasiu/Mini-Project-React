@@ -96,7 +96,7 @@ function SharingFriend() {
                     key={index}
                   >
                     <div className="grid justify-end text-end">
-                      <p className="font-bold mr-2">User</p>
+                      <p className="font-bold mr-2">Moh. afizan</p>
                       <div className="w-full">
                         <p className="w-full rounded-xl bg-green-200 pl-4 p-2 ">
                           {entry.question}
@@ -104,7 +104,7 @@ function SharingFriend() {
                       </div>
                     </div>
                     <div className="grid justify-start">
-                      <p className="font-bold ml-2">Spesialis</p>
+                      <p className="font-bold ml-2">Sharing Friend</p>
                       <div className={`w-96`}>
                         <p className={`w-full rounded-xl bg-white pl-4 p-2 `}>
                           {entry.answer}
