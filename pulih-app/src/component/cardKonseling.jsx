@@ -23,7 +23,7 @@ const cardKonseling = ({
           <Button onClick={onClick} button={button} rounded="md" />
         </div>
       ) : (
-        <div className="group grid border border-slate-400 shadow-xl gap-y-4 w-60 h-full p-5 rounded-md">
+        <div className="group grid border shadow-xl gap-y-4 w-60 h-full p-5 rounded-md">
           <div className={`relative`}>
             <img className="w-52 h-40 rounded-md" src={image} />
             <BsPlayCircleFill

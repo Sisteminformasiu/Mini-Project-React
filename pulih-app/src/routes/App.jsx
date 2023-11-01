@@ -13,6 +13,8 @@ import Konseling from "../pages/Konseling";
 import SharingFriend from "../pages/SharingFriendAI";
 import DetailMusic from "../pages/DetailMeditationMusic";
 import PrivateRoute from "../component/PrivateRouter";
+import KonselingPlus from "../pages/KonselingPlus";
+import DetailKonselingPlus from "../pages/DetailKonselingPlus";
 
 function App() {
   return (
@@ -33,6 +35,11 @@ function App() {
               }
             />
             <Route path="/sharingFriend" element={<SharingFriend />} />
+            <Route path="/konselingPlus" element={<KonselingPlus />} />
+            <Route
+              path="/detailkonselingPlus"
+              element={<DetailKonselingPlus />}
+            />
             <Route path="/detail_story/:title" element={<DetailStory />} />
             <Route
               path="/meditation"

@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 import CardKonseling from "../../component/cardKonseling";
 import Navbar from "../../component/Navbar";
 import Container from "../../component/container";
-import Footer from "../../component/Footer";
 
 function Konseling() {
   const useLanguage = useSelector((state) => state.language.useLanguage);
   const navigate = useNavigate();
+  const popupRef = useRef(null);
+
+  const togglePopup = () => {
+    if (popupRef.current) {
+      popupRef.current.style.display = "block";
+      setTimeout(() => {
+        popupRef.current.style.display = "none";
+      }, 1000);
+    }
+  };
 
   return (
     <div className="w-screen h-screen">
@@ -17,7 +26,7 @@ function Konseling() {
         <Navbar
           home="Home"
           story="Story"
-          meditation="Meditation"
+          meditation="Lelap"
           konseling="Konseling"
           login="Login"
           type="type1"
@@ -67,6 +76,7 @@ function Konseling() {
                 description="Talk to your psychologist through online meetings"
                 button="Book Now"
                 typeCard="type 1"
+                onClick={() => navigate("/konselingPlus")}
               />
             ) : (
               <CardKonseling
@@ -75,6 +85,7 @@ function Konseling() {
                 description="Konsultasikan masalahmu secara online bersama Psikolog"
                 button="Jadwalkan Sekarang"
                 typeCard="type 1"
+                onClick={() => navigate("/konselingPlus")}
               />
             )}
           </div>
@@ -86,6 +97,7 @@ function Konseling() {
                 description="Talk to a psychologist together with your partner"
                 button="Book Now"
                 typeCard="type 1"
+                onClick={togglePopup}
               />
             ) : (
               <CardKonseling
@@ -94,6 +106,7 @@ function Konseling() {
                 description="Konsultasi online bersama pasangan didampingi Psikolog"
                 button="Jadwalkan Sekarang"
                 typeCard="type 1"
+                onClick={togglePopup}
               />
             )}
           </div>
@@ -105,6 +118,7 @@ function Konseling() {
                 description="Talk to your psychologist in person"
                 button="Book Now"
                 typeCard="type 1"
+                onClick={togglePopup}
               />
             ) : (
               <CardKonseling
@@ -113,11 +127,20 @@ function Konseling() {
                 description="Bertemu langsung dan ceritakan masalah ke Psikolog"
                 button="Jadwalkan Sekarang"
                 typeCard="type 1"
+                onClick={togglePopup}
               />
             )}
           </div>
         </div>
       </Container>
+      <div
+        ref={popupRef}
+        className="fixed inset-0 flex hidden items-center justify-center z-20 bg-white bg-opacity-50"
+      >
+        <p className="w-36 h-14 rounded-xl mx-auto my-52 bg-white border text-black font-bold p-4">
+          Coming Soon
+        </p>
+      </div>
       <div className="w-screen h-16 bg-gray-400 flex justify-center items-center gap-x-5 text-slate-200 mt-16">
         <p className="font-semibold">Copyright &copy;2023 Pulih.</p>
         <p className="w-1 h-10 bg-slate-200 rounded-xl"></p>

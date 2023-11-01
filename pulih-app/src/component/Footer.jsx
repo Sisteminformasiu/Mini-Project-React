@@ -1,6 +1,4 @@
-import footer from "../assets/footer.png";
 import logo from "../assets/Logo-Pulih.png";
-import { useSelector } from "react-redux";
 import {
   FaYoutube,
   FaFacebook,
@@ -12,45 +10,10 @@ import {
 import Container from "./container";
 import Button from "./Button";
 import Input from "./input";
-import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
-  const useLanguage = useSelector((state) => state.language.useLanguage);
-  const navigate = useNavigate();
-
   return (
     <footer>
-      <div
-        style={{
-          background: "#99CF60",
-          width: "211vh",
-          borderTopLeftRadius: "160px",
-          borderTopRightRadius: "160px",
-          borderBottomLeftRadius: "40px",
-          borderBottomRightRadius: "40px",
-        }}
-        className="h-96 mb-12"
-      >
-        <Container>
-          <div className="flex justify-between">
-            <div className="flex flex-col items-start justify-center gap-y-6">
-              <h2
-                style={{ width: "100vh" }}
-                className="text-white text-4xl font-bold"
-              >
-                {useLanguage
-                  ? "ItsTime to discover a better you with Riliv’s meditation and counseling services"
-                  : "#UdahSaatnya, Lebih Sehat Mental Dengan Layanan Konseling Dan Meditasi Dari Pulih"}
-              </h2>
-              <Button
-                onClick={() => navigate("/meditation")}
-                button={useLanguage ? "Go Meditation" : "Ayo Meditasi"}
-              />
-            </div>
-            <img className="w-96 h-96" src={footer} />
-          </div>
-        </Container>
-      </div>
       <div>
         <Container>
           <div className="flex mt-6 mb-16">
@@ -169,14 +132,14 @@ const Footer = () => {
         </Container>
       </div>
       <div
-        style={{ background: "#99CF60" }}
+        style={{ background: "rgba(153, 207, 96, 0.7)" }}
         className="w-screen h-16 flex justify-center items-center gap-x-5 text-white"
       >
-        <p className="font-semibold">Copyright &copy;2023 Pulih.</p>
-        <p className="w-1 h-10 bg-white"></p>
-        <p className="font-semibold">
+        <p className="font-semibold text-white">Copyright &copy;2023 Pulih.</p>
+        <p className="w-1 h-10 bg-white rounded-full"></p>
+        <p className="font-semibold text-white">
           Better Mind Better
-          <span className="font-bold">You</span>
+          <span className="font-bold text-white"> You</span>
         </p>
       </div>
     </footer>

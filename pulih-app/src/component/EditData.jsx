@@ -3,7 +3,7 @@ import Input from "./input";
 import InputSelect from "./InputSelect";
 import Button from "./Button";
 
-function EditData({ closeEdit, edit, updateData, setUpdateData, onSave }) {
+function EditData({ closeEdit, edit, updateData, setUpdateData, handleSave }) {
   const handleChange = (e) => {
     const { name, value } = e.target;
     const updatedData = [...updateData];
@@ -97,7 +97,7 @@ function EditData({ closeEdit, edit, updateData, setUpdateData, onSave }) {
           ))}
         <div className="flex justify-between items-center gap-x-2 mt-4">
           <div className="w-full">
-            <Button onClick={() => onSave(updateData)} button="Simpan" />
+            <Button onClick={() => handleSave(updateData)} button="Simpan" />
           </div>
           <div className="w-full">
             <Button onClick={closeEdit} button="Batal" />

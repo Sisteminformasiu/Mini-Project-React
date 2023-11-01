@@ -68,7 +68,7 @@ function SharingFriend() {
   };
 
   return (
-    <div className="overflow-hidden w-screen h-full bg-lime-200">
+    <div className="overflow-hidden w-screen h-full bg-lime-200 bg-opacity-80">
       <div className="flex">
         <div className="h-full bg-white">
           <SideBar size="fullSize" />
@@ -128,7 +128,7 @@ function SharingFriend() {
                     right: "20px",
                     left: "55vh",
                   }}
-                  className="bg-lime-200 flex justify-center items-center gap-x-2"
+                  className="bg-lime-200 bg-opacity-30 flex justify-center items-center gap-x-2"
                 >
                   <div style={{ width: "120vh" }}>
                     <Input

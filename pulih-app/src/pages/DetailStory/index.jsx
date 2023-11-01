@@ -34,7 +34,7 @@ function DetailStory() {
         <Navbar
           home="Home"
           story="Story"
-          meditation="Meditation"
+          meditation="Lelap"
           konseling="Konseling"
           login="Login"
           type="type1"

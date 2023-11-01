@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Prita Maharani, M.Psi., Psikolog",
+        "spesialis": "Spesialisasi: CBT, Relaksasi",
+        "status": "Tersedia 5 Jadwal Sesi Konseling",
+        "description": "Haaii! Anda boleh memanggil saya Prita. Saya adalah psikolog klinis lulusan Universitas 17 Agustus 1945, Surabaya. Saya menangani kasus terkait seksualitas, kecanduan, LGBT, relationship, family, kecemasan dan kesepian yang sering dialami oleh remaja, dewasa dan lansia. Selama proses konseling, saya biasa menggunakan Cognitif Behavior Therapy (CBT), Forgiveness, Photovoice, Journaling, Humanistic Therapy dan beberapa terapi lainnya yang dibutuhkan oleh klien. Saya akan sangat senang jika menjadi bagian dari proses perjalanan Anda dalam mencabut akar kepahitan dan membuat Anda lebih bahagia. Karena itulah saya hadir sebagai teman berproses Anda. Maka tiada kesehatan tanpa sehat jiwa!",
+        "image": "https://riliv.co/_next/image?url=https%3A%2F%2Friliv-s3-prod.s3.ap-southeast-1.amazonaws.com%2Fimages%2Fprofile%2Fzr4DVu5aeMjT67Y.png%3FAWSAccessKeyId%3DAKIA5FNVGBTJNC5BTS6E%26Expires%3D1698764516%26Signature%3DVkWLHFz070lG1HuqVh4H3PW9j34%253D&w=96&q=75",
+        "id": "1"
+    },
+    {
+        "name": "Nurul Aini, M.Psi., Psikolog",
+        "spesialis": "Spesialisasi: Positive Psychology Intervention",
+        "status": "Tersedia 0 Jadwal Sesi Konseling",
+        "image": "https://riliv.co/_next/image?url=https%3A%2F%2Friliv-s3-prod.s3.ap-southeast-1.amazonaws.com%2Fimages%2Fprofile%2FHIl16xVBxmeTlYz.png%3FAWSAccessKeyId%3DAKIA5FNVGBTJNC5BTS6E%26Expires%3D1698764516%26Signature%3D%252B5ioZiA%252BUCQYVaPVyUV0d0GX7fM%253D&w=96&q=75",
+        "id": "2"
+    },
+    {
+        "name": "Jelang Hardika, M.Psi., Psikolog",
+        "spesialis": "Spesialisasi: CBT, PCT",
+        "status": "Tersedia 3 Jadwal Sesi Konseling",
+        "image": "https://riliv.co/_next/image?url=https%3A%2F%2Friliv-s3-prod.s3.ap-southeast-1.amazonaws.com%2Fimages%2Fprofile%2F07fVOjyTpKg9dCx.png%3FAWSAccessKeyId%3DAKIA5FNVGBTJNC5BTS6E%26Expires%3D1698764516%26Signature%3DEErOTL0IjHvIHIf42c2yvVf6Cy8%253D&w=96&q=75",
+        "id": "3"
+    },
+    {
+        "name": "Evi Yemima Koentjoro, M.Psi., Psikolog",
+        "spesialis": "Spesialisasi: CBT",
+        "status": "Tersedia 3 Jadwal Sesi Konseling",
+        "image": "https://riliv.co/_next/image?url=https%3A%2F%2Friliv-s3-prod.s3.ap-southeast-1.amazonaws.com%2Fimages%2Fprofile%2FFDz34PPQWtyF9P5.png%3FAWSAccessKeyId%3DAKIA5FNVGBTJNC5BTS6E%26Expires%3D1698764516%26Signature%3DJ8Dx7NprpiDLoJePpAjcd0kuk0o%253D&w=96&q=75",
+        "id": "4"
+    },
+    {
+        "name": "Erwinda Tri Satya, M.Psi., Psikolog",
+        "spesialis": "Spesialisasi: Client Centered Therapy, Terapi",
+        "status": "Tersedia 1 Jadwal Sesi Konseling",
+        "image": "https://riliv.co/_next/image?url=https%3A%2F%2Friliv-s3-prod.s3.ap-southeast-1.amazonaws.com%2Fimages%2Fprofile%2FR8lt674ti4Ms5Zc.png%3FAWSAccessKeyId%3DAKIA5FNVGBTJNC5BTS6E%26Expires%3D1698764516%26Signature%3DudFOVmnlVq2Zuj4BMVlvre2ZtNM%253D&w=96&q=75",
+        "id": "5"
+    },
+    {
+        "name": "Dhea Dana Mariska, M.Psi., Psikolog",
+        "spesialis": "Spesialisasi: Hypnoterapi",
+        "status": "Tersedia 0 Jadwal Sesi Konseling",
+        "image": "https://riliv.co/_next/image?url=https%3A%2F%2Friliv-s3-prod.s3.ap-southeast-1.amazonaws.com%2Fimages%2Fprofile%2FbGW0Vk8Y95PG31j.png%3FAWSAccessKeyId%3DAKIA5FNVGBTJNC5BTS6E%26Expires%3D1698764516%26Signature%3D0%252FXA4qtZjFOqGuuvp2xsUi7PS%252F4%253D&w=96&q=75",
+        "id": "6"
+    },
+    {
+        "name": "Annisa Yuliarahma, M.Psi., Psikolog",
+        "spesialis": "Spesialisasi: CBT",
+        "status": "Tersedia 3 Jadwal Sesi Konseling",
+        "image": "https://riliv.co/_next/image?url=https%3A%2F%2Friliv-s3-prod.s3.ap-southeast-1.amazonaws.com%2Fimages%2Fprofile%2FteMK8jpppTJaXNj.png%3FAWSAccessKeyId%3DAKIA5FNVGBTJNC5BTS6E%26Expires%3D1698764516%26Signature%3DEX1dbib8lvyejZBlUuJ3dxvVVVo%253D&w=96&q=75",
+        "id": "6"
+    }
+ ]

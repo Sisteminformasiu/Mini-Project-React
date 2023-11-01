@@ -17,7 +17,7 @@ const Meditation = () => {
         <Navbar
           home="Home"
           story="Story"
-          meditation="Meditation"
+          meditation="Lelap"
           konseling="Konseling"
           login="Login"
           type="type1"
@@ -35,7 +35,7 @@ const Meditation = () => {
           </div>
           <Container>
             <div>
-              <h1 className="text-3xl font-black">
+              <h1 style={{ width: "90vh" }} className="text-3xl font-black">
                 Try listening to this to make the most of your day
               </h1>
             </div>

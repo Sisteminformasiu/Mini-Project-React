@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
 import Swal from "sweetalert2";
 
 import Tabel from "../../../component/Tabel";
@@ -13,14 +12,13 @@ import Button from "../../../component/Button";
 function BiodataDiri() {
   const [edit, setEdit] = useState(false);
   const [editedData, setEditedData] = useState(null);
-  const [originalData, setOriginalData] = useState(null);
 
   const location = useLocation();
   const userData = location.state ? location.state.userData : null;
   const [updateData, setUpdateData] = useState(userData || []);
   const navigate = useNavigate();
 
-  const handleSave = (newDataProfile) => {
+  const handleSave = () => {
     setEditedData([...updateData]);
     closeEdit();
   };
@@ -64,7 +62,7 @@ function BiodataDiri() {
         <Navbar
           home="Home"
           story="Story"
-          meditation="Meditation"
+          meditation="Lelap"
           konseling="Konseling"
           login="Login"
           type="type1"
@@ -76,7 +74,7 @@ function BiodataDiri() {
             <Sidebar userData={updateData} handleDelete={handleDelete} />
           </div>
           <div>
-            {userData && updateData.length ? (
+            {updateData.length ? (
               <Tabel userData={updateData} openEdit={openEdit} />
             ) : (
               <div
@@ -96,7 +94,7 @@ function BiodataDiri() {
           <EditData
             updateData={updateData}
             setUpdateData={setUpdateData}
-            onSave={handleSave}
+            handleSave={handleSave}
             edit={edit}
             closeEdit={handleCancel}
           />
