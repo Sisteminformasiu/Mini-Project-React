@@ -12,15 +12,15 @@ const HeroSection = ({ size }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="container flex mx-auto my-14 w-screen">
+    <div className="md:container flex flex-col md:flex-row mx-auto my-14 w-screen">
       <div
         style={{ width: `${size ? "90vh" : "110vh"}` }}
-        className="mx-20 h-full pb-9 divide-y"
+        className="mx-5 md:mx-20 h-full pb-9 divide-y"
       >
-        <div>
+        <div className={`w-[360px] ${size ? "md:w-[90vh]" : "md:w-[110vh]"}`}>
           <h1
             style={{ color: "#99CF60" }}
-            className="text-5xl font-bold mb-6 leading-tight"
+            className="text-4xl md:text-5xl font-bold mb-6 leading-tight"
           >
             {useLanguage ? Words.title.en : Words.title.id}
           </h1>
@@ -46,7 +46,7 @@ const HeroSection = ({ size }) => {
         </div>
         <div>
           {useLanguage ? (
-            <div className="grid grid-cols-2 gap-y-8 gap-x-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-20">
               <div className="flex items-center gap-x-2">
                 <BiSolidSpa className="w-8 h-8" style={{ color: "#99CF60" }} />
                 <p className="w-60 mt-4">
@@ -84,7 +84,7 @@ const HeroSection = ({ size }) => {
               </div>
             </div>
           ) : (
-            <div className="grid grid-cols-2 gap-y-8 gap-x-20">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-20">
               <div className="flex items-center gap-x-2">
                 <BiSolidSpa className="w-8 h-8" style={{ color: "#99CF60" }} />
                 <p className="w-60 mt-4">
@@ -126,7 +126,7 @@ const HeroSection = ({ size }) => {
           )}
         </div>
       </div>
-      <div className="h-full mr-8">
+      <div className="ml-3 md:ml-0 h-full mr-8">
         <img src={gambarHeroSection} />
       </div>
     </div>

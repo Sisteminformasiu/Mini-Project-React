@@ -35,11 +35,11 @@ const Meditation = () => {
           </div>
           <Container>
             <div>
-              <h1 style={{ width: "90vh" }} className="text-3xl font-black">
+              <h1 className="w-96 ml-5 md:ml-0 md:w-[90vh] text-3xl font-black">
                 Try listening to this to make the most of your day
               </h1>
             </div>
-            <div className="grid grid-cols-4 gap-y-5 pb-5 pt-6">
+            <div className="overflow-x-auto grid grid-cols-5 md:grid-cols-4 gap-x-64 md:gap-x-0 gap-y-5 pb-5 pt-6 pl-5 mr-5 md:mr-0 md:pl-0">
               {meditation_music &&
                 meditation_music.map((item) => {
                   return (

@@ -16,8 +16,8 @@ const Footer = () => {
     <footer>
       <div>
         <Container>
-          <div className="flex mt-6 mb-16">
-            <div className="grid gap-y-5 mx-auto">
+          <div className="flex flex-col md:flex-row mt-6 mb-16">
+            <div className="grid gap-y-5 mb-12 mx-auto">
               <img width={140} src={logo} />
               <ul className="flex gap-x-5 mt-2">
                 <abbr title="facebook">
@@ -83,47 +83,47 @@ const Footer = () => {
               </div>
               <Button type="submit" button="Submit" />
             </div>
-            <div className="mx-auto">
-              <h2 className="font-bold text-lg">Our Service</h2>
+            <div className="mx-auto grid justify-center mb-12 md:justify-start">
+              <h2 className="font-bold text-2xl md:text-lg">Our Service</h2>
               <div className="mt-6 grid gap-y-5">
-                <p className="text-gray-500 cursor-pointer text-sm font-semibold">
+                <p className="text-gray-500 cursor-pointer text-xl md:text-sm font-semibold">
                   Meditation
                 </p>
-                <p className="text-gray-500 cursor-pointer text-sm font-semibold">
+                <p className="text-gray-500 cursor-pointer text-xl md:text-sm font-semibold">
                   Counseling
                 </p>
-                <p className="text-gray-500 cursor-pointer text-sm font-semibold">
+                <p className="text-gray-500 cursor-pointer text-xl md:text-sm font-semibold">
                   Pulih For Company
                 </p>
               </div>
             </div>
-            <div className="mx-auto">
-              <h2 className="font-bold text-lg">Get to Know Us</h2>
+            <div className="mx-auto grid justify-center mb-12 md:justify-start">
+              <h2 className="font-bold text-2xl md:text-lg">Get to Know Us</h2>
               <div className="mt-6 grid gap-y-5">
-                <p className="text-gray-500 cursor-pointer text-sm font-semibold">
+                <p className="text-gray-500 cursor-pointer text-xl md:text-sm font-semibold">
                   Read Our Blogs
                 </p>
-                <p className="text-gray-500 cursor-pointer text-sm font-semibold">
+                <p className="text-gray-500 cursor-pointer text-xl md:text-sm font-semibold">
                   Abous US
                 </p>
-                <p className="text-gray-500 cursor-pointer text-sm font-semibold">
+                <p className="text-gray-500 cursor-pointer text-xl md:text-sm font-semibold">
                   Contact US
                 </p>
               </div>
             </div>
-            <div className="mx-auto">
-              <h2 className="font-bold text-lg">Others</h2>
+            <div className="mx-auto grid justify-center md:justify-start">
+              <h2 className="font-bold text-2xl md:text-lg">Others</h2>
               <div className="mt-6 grid gap-y-5">
-                <p className="text-gray-500 cursor-pointer text-sm font-semibold">
+                <p className="text-gray-500 cursor-pointer text-xl md:text-sm font-semibold">
                   Meditation Pricing
                 </p>
-                <p className="text-gray-500 cursor-pointer text-sm font-semibold">
+                <p className="text-gray-500 cursor-pointer text-xl md:text-sm font-semibold">
                   Counseling Pricing
                 </p>
-                <p className="text-gray-500 cursor-pointer text-sm font-semibold">
+                <p className="text-gray-500 cursor-pointer text-xl md:text-sm font-semibold">
                   Privacy Policy
                 </p>
-                <p className="text-gray-500 cursor-pointer text-sm font-semibold">
+                <p className="text-gray-500 cursor-pointer text-xl md:text-sm font-semibold">
                   FAQ
                 </p>
               </div>

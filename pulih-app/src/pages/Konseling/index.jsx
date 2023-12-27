@@ -21,7 +21,7 @@ function Konseling() {
   };
 
   return (
-    <div className="w-screen h-screen">
+    <div className="w-screen h-full md:h-screen">
       <div className="my-2">
         <Navbar
           home="Home"
@@ -46,8 +46,8 @@ function Konseling() {
         </div>
       )}
       <Container>
-        <div className="my-12 flex justify-center items-center gap-x-5">
-          <div>
+        <div className="my-12 flex-col md:flex-row justify-center items-center gap-x-5">
+          <div className="mb-4 md:mb-0">
             {useLanguage ? (
               <CardKonseling
                 image="https://img.freepik.com/premium-photo/energy-button-generative-ai_918955-775.jpg"
@@ -68,7 +68,7 @@ function Konseling() {
               />
             )}
           </div>
-          <div>
+          <div className="mb-4 md:mb-0">
             {useLanguage ? (
               <CardKonseling
                 image="https://img.freepik.com/premium-photo/software-developer-mascot-company-logo-line-art-generative-ai_934475-6925.jpg"
@@ -89,7 +89,7 @@ function Konseling() {
               />
             )}
           </div>
-          <div>
+          <div className="mb-4 md:mb-0">
             {useLanguage ? (
               <CardKonseling
                 image="https://img.freepik.com/premium-photo/green-heart-realistic-3d-love-heart-symbol-illustration_980225-1452.jpg"
@@ -110,7 +110,7 @@ function Konseling() {
               />
             )}
           </div>
-          <div>
+          <div className="mb-4 md:mb-0">
             {useLanguage ? (
               <CardKonseling
                 image="https://img.freepik.com/premium-photo/green-armchair-yellow-background-minimalism-place-text-generative-ai_655310-4072.jpg"

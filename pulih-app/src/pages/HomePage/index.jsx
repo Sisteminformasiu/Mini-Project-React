@@ -37,22 +37,18 @@ function HomePages() {
           <div
             style={{
               backgroundColor: "rgba(153, 207, 96, 0.7)",
-              width: "211vh",
               borderTopLeftRadius: "147px",
               borderTopRightRadius: "147px",
               borderBottomLeftRadius: "40px",
               borderBottomRightRadius: "40px",
               opacity: "",
             }}
-            className="h-96 mb-12"
+            className="w-full md:w-[211vh] h-96 mb-12"
           >
             <Container>
               <div className="flex justify-between">
-                <div className="flex flex-col items-start justify-center gap-y-6">
-                  <h2
-                    style={{ width: "100vh" }}
-                    className="text-white text-4xl font-bold"
-                  >
+                <div className="flex flex-col items-start justify-center gap-y-6 -mr-14 md:-mr-32 mt-28 md:mt-0">
+                  <h2 className="w-[370px] md:w-[100vh] text-white text-3xl md:text-4xl font-bold">
                     {useLanguage
                       ? "ItsTime to discover a better you with Riliv’s meditation and counseling services"
                       : "#UdahSaatnya, Lebih Sehat Mental Dengan Layanan Konseling Dan Meditasi Dari Pulih"}
@@ -62,7 +58,10 @@ function HomePages() {
                     button={useLanguage ? "Go Meditation" : "Ayo Meditasi"}
                   />
                 </div>
-                <img className="w-96 h-96" src={gambarFooter} />
+                <img
+                  className="hidden md:block md:w-96 h-96"
+                  src={gambarFooter}
+                />
               </div>
             </Container>
           </div>

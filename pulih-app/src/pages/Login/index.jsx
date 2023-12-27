@@ -71,8 +71,7 @@ const Login = () => {
       <div className="w-screen h-screen flex justify-center items-start bg-green-50">
         <form
           onSubmit={handleLogin}
-          className="p-7 rounded-xl shadow-md flex flex-col mx-32 my-32 gap-y-3 bg-white"
-          style={{ width: "78vh" }}
+          className="w-[78vh] p-7 rounded-xl shadow-md flex flex-col mx-5 md:mx-32 my-12 md:my-32 gap-y-3 bg-white"
         >
           <h1 className="text-center text-gray-600 text-3xl font-bold">
             LOGIN
