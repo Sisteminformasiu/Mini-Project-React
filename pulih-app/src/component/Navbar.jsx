@@ -97,7 +97,7 @@ const Navbar = ({
       <div
         className={`w-screen flex justify-between items-center md:hidden bg-white py-5 z-50 ${
           isScrolled
-            ? "fixed left-0 bottom-[100vh] translate-y-[79px] duration-700"
+            ? "fixed left-0 bottom-[100vh] translate-y-[30px] duration-700"
             : ""
         }`}
       >
@@ -273,7 +273,7 @@ const Navbar = ({
       <nav
         className={`fixed right-[389px] ${
           mobileMenuMode
-            ? "translate-x-80 duration-700"
+            ? "left-0 duration-700"
             : "-translate-x-80 duration-1000"
         } top-[75px] w-80 h-full md:gap-x-0 cursor-pointer flex-col justify-between items-center gap-x-12 bg-white rounded-md md:hidden`}
       >

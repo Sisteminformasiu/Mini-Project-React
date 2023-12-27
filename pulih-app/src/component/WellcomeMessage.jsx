@@ -30,16 +30,17 @@ const WellcomeMessage = ({ size }) => {
         <div className="flex flex-col-reverse md:flex-row mx-0 md:mx-12 mt-16 mb-36">
           <div
             style={{ backgroundImage: `URL('${gambarWellcomeMessage}')` }}
-            className="ml-3 md:ml-40 h-60 w-[360px] md:w-96 bg-red-300 rounded-full overflow-hidden mr-8 bg-cover bg-center"
+            className="ml-3 md:ml-4 h-60 w-[360px] md:w-96 rounded-full overflow-hidden mr-8 bg-cover bg-center"
           ></div>
           <div
-            style={{ width: `${size ? "90vh" : "110vh"}` }}
-            className="mx-0 md:mx-20 h-full pb-9 divide-y"
+            className={`mx-0 md:mx-20 h-full pb-9 divide-y ${
+              size ? "md:w-[90vh]" : "md:w-[110vh]"
+            }`}
           >
-            <div className="mr-[330px] md:mr-0">
+            <div className="w-96 md:w-[90vh] mr-[330px] md:mr-0">
               <h1
                 style={{ color: "#99CF60" }}
-                className="text-2xl text-center md:tetx-start font-bold mb-6 leading-tight"
+                className="text-2xl text-center md:text-start font-bold mb-6 leading-tight"
               >
                 {useLanguage ? Words.title_3.en : Words.title_3.id}
               </h1>
