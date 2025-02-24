@@ -16,11 +16,10 @@ const Card = ({
         <Container>
           <div
             id={id}
-            style={{ width: "116vh", height: "30vh" }}
-            className="flex gap-x-6"
+            className="w-80 sm:w-[116vh] h-full sm:h-[30vh] flex flex-col sm:flex-row gap-x-6"
             onClick={onClick}
           >
-            <img width={260} src={image} />
+            <img className="w-full sm:w-[260px]" src={image} />
             <div className="flex flex-col gap-y-4">
               <h1 style={{ fontSize: "22px" }} className="text-2xl font-bold">
                 {title}
@@ -32,9 +31,7 @@ const Card = ({
                 <p>{author}</p>
                 <p>{date}</p>
               </div>
-              <p className="font-regular" style={{ width: "67vh" }}>
-                {description}
-              </p>
+              <p className="w-full sm:w-[76vh] font-regular">{description}</p>
             </div>
           </div>
         </Container>

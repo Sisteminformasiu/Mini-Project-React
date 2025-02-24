@@ -120,11 +120,13 @@ function Story() {
               </ul>
             </Container>
           </div>
-          <div className="flex gap-x-48 pb-12">
+          <div className="flex flex-col sm:flex-row gap-x-48 pb-12">
             <div className="grid grid-cols-1 gap-y-9">
               <Container>
                 {dataCardArticle && dataCardArticle.length > 0 && (
-                  <h1>{dataCardArticle[0].category}</h1>
+                  <p className="ml-8 sm:ml-0 w-96 sm:w-full text-[30px] sm:text-[51px] font-semibold">
+                    {dataCardArticle[0].category}
+                  </p>
                 )}
               </Container>
               {dataCardArticle &&

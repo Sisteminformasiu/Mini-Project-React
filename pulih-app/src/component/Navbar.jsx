@@ -97,7 +97,7 @@ const Navbar = ({
       <div
         className={`w-screen flex justify-between items-center md:hidden bg-white py-5 z-50 ${
           isScrolled
-            ? "fixed left-0 bottom-[100vh] translate-y-[30px] duration-700"
+            ? "fixed left-0 bottom-[100vh] translate-y-[63.8px] duration-700"
             : ""
         }`}
       >
@@ -355,7 +355,7 @@ const Navbar = ({
             </li>
           </ul>
         ) : (
-          <ul className="flex relative">
+          <ul className="hidden sm:block relative">
             <li>
               <Input
                 name="search"

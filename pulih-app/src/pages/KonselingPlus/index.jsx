@@ -23,22 +23,19 @@ const KonselingPlus = () => {
       </div>
       <div
         style={{ background: "#99CF60" }}
-        className="h-60 flex items-center justify-between "
+        className="h-60 flex flex-col sm:flex-row items-center justify-center sm:justify-between "
       >
         <div>
-          <h2 className="text-3xl ml-56 text-white font-bold ">
+          <h2 className="text-3xl ml-0 p-2 sm:p-0 sm:ml-56 text-white font-bold ">
             Layanan Konseling Plus
           </h2>
-          <p
-            style={{ width: "90vh" }}
-            className="ml-56 text-white font-semibold mt-3"
-          >
+          <p className="w-full sm:w-[90vh] ml-0 p-2 sm:p-0 sm:ml-56 text-white font-semibold mt-3">
             Atur jadwal konseling bersama psikolog profesional yang selalu siap
             membantu mengatasi masalah kesehatan mentalmu
           </p>
         </div>
         <p
-          className="w-32 h-32 mr-52 rounded-full overflow-hidden bg-cover bg-center"
+          className="hidden sm:block w-32 h-32 mr-52 rounded-full overflow-hidden bg-cover bg-center"
           style={{
             backgroundImage:
               'URL("https://img.freepik.com/premium-photo/software-developer-mascot-company-logo-line-art-generative-ai_934475-6925.jpg")',
@@ -47,7 +44,7 @@ const KonselingPlus = () => {
       </div>
       <div>
         <Container>
-          <div className="flex gap-x-12 mt-12">
+          <div className="flex flex-col sm:flex-row gap-y-7 sm:gap-y-0 gap-x-12 mt-12">
             <div className="w-72 h-full border border-slate-400 rounded-md p-4">
               <p className="font-bold text-lg">Atur Konseling</p>
               <hr className="mt-4" />
@@ -104,7 +101,7 @@ const KonselingPlus = () => {
               </label>
             </div>
             <div className="flex flex-col gap-y-5">
-              <div className="flex gap-x-3 h-16">
+              <div className="overflow-x-scroll sm:overflow-hidden flex gap-x-3 w-[80vw] sm:w-full h-16">
                 <div className="border rounded-md p-1 hover:bg-blue-300 cursor-pointer px-5">
                   <p className="font-bold">Senin</p>
                   <p>1 Nov</p>
@@ -134,16 +131,12 @@ const KonselingPlus = () => {
                   <p>7 Nov</p>
                 </div>
               </div>
-              <div
-                className="overflow-y-hidden overflow-y-scroll"
-                style={{ height: "90vh" }}
-              >
+              <div className="overflow-y-scroll" style={{ height: "90vh" }}>
                 <h2 className="text-xl font-bold">Daftar Psikolog</h2>
                 {psikologList.map((item) => (
                   <div
                     id={item.id}
-                    style={{ width: "108vh" }}
-                    className="flex justify-between items-center gap-x-6 rounded-xl border p-5 mt-3"
+                    className="w-full sm:w-[108vh] flex flex-col sm:flex-row justify-between items-center gap-x-6 rounded-xl border p-5 mt-3"
                   >
                     <img className="w-24 h-24 rounded-full" src={item.image} />
                     <div className="grid gap-y-2 pr-5">

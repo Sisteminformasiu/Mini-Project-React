@@ -9,7 +9,7 @@ import Container from "../../component/container";
 
 function SharingFriend() {
   const configuration = new Configuration({
-    apiKey: import.meta.env.VITE_OPENAI_KEY,
+    apiKey: import.meta.env.VITE_DEEPSEEK_KEY,
   });
   const openai = new OpenAIApi(configuration);
 
@@ -48,7 +48,7 @@ function SharingFriend() {
 
     await openai
       .createCompletion({
-        model: "text-davinci-003",
+        model: "deepseek-chat",
         prompt: newPrompt,
         temperature: 0.5,
         max_tokens: 2000,
@@ -68,13 +68,13 @@ function SharingFriend() {
   };
 
   return (
-    <div className="overflow-hidden w-screen h-full bg-lime-200 bg-opacity-80">
-      <div className="flex">
-        <div className="h-full bg-white">
+    <div className="overflow-hidden w-full sm:w-screen h-full bg-white sm:bg-lime-200 bg-opacity-80">
+      <div className="flex flex-col sm:flex-row">
+        <div className="hidden sm:block h-full bg-white">
           <SideBar size="fullSize" />
         </div>
         <div>
-          <div className="w-full h-14 flex items-center p-5 bg-white">
+          <div className="w-full h-14 flex flex-col sm:flex-row sm:justify-start items-center p-5 bg-white shadow-md">
             <div className=" flex items-center gap-x-2 ml-4">
               <FaCircleUser className="w-8 h-8" />
               <h2 className="text-lg font-bold">Sharing Friend</h2>
@@ -83,13 +83,7 @@ function SharingFriend() {
           </div>
           <Container>
             <div className="mx-5">
-              <div
-                style={{
-                  width: "120vh",
-                  maxHeight: "88vh",
-                  overflowY: "scroll",
-                }}
-              >
+              <div className="w-full sm:w-[120vh] max-h-[88vh] overflow-y-scroll ">
                 {history.map((entry, index) => (
                   <div
                     className={`h-full ${loading === true ? "" : "pb-14"}`}
@@ -120,17 +114,8 @@ function SharingFriend() {
                 )}
               </div>
               <div className="">
-                <div
-                  style={{
-                    position: "fixed",
-                    inset: "0",
-                    top: "88vh",
-                    right: "20px",
-                    left: "55vh",
-                  }}
-                  className="bg-lime-200 bg-opacity-30 flex justify-center items-center gap-x-2"
-                >
-                  <div style={{ width: "120vh" }}>
+                <div className="fixed inset-0 top-[88vh] right-[20px] left-5 sm:left-[55vh] bg-white sm:bg-lime-200 bg-opacity-30 flex justify-center items-center gap-x-2">
+                  <div className="w-[120vh]">
                     <Input
                       type="text"
                       name="userName"
@@ -141,7 +126,7 @@ function SharingFriend() {
                   </div>
                   <p
                     onClick={handleResult}
-                    className="w-12 h-12 bg-white rounded-full flex items-center justify-center text-cyan-500 hover:text-white hover:bg-cyan-500"
+                    className="w-20 h-8 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center text-cyan-500 hover:text-white hover:bg-cyan-500"
                   >
                     {<IoMdSend className="w-6 h-6" />}
                   </p>

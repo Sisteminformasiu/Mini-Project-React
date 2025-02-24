@@ -46,7 +46,7 @@ function Konseling() {
         </div>
       )}
       <Container>
-        <div className="my-12 flex-col md:flex-row justify-center items-center gap-x-5">
+        <div className="my-12 flex flex-col md:flex-row justify-center items-center gap-x-5">
           <div className="mb-4 md:mb-0">
             {useLanguage ? (
               <CardKonseling
